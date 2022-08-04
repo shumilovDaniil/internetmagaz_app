@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/internetmagaz_app/static/css/main.2ba7c3bf.css",
+    "main.js": "/internetmagaz_app/static/js/main.6e628e10.js",
+    "index.html": "/internetmagaz_app/index.html",
+    "main.2ba7c3bf.css.map": "/internetmagaz_app/static/css/main.2ba7c3bf.css.map",
+    "main.6e628e10.js.map": "/internetmagaz_app/static/js/main.6e628e10.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ba7c3bf.css",
+    "static/js/main.6e628e10.js"
+  ]
+}
