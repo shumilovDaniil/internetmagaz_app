@@ -9,7 +9,7 @@ const Home = () => {
     <div className=" text-black">
       <Search />
       <div className="flex">
-        <ProductList />
+        {/*<ProductList />*/}
         <Sidebar />
       </div>
       <ShowMore />
