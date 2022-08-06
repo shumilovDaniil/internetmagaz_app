@@ -20,12 +20,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm start\"",
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "npx json-server --watch server/db.json -p 3001"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +49,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",
+    "concurrently": "^7.3.0",
     "gh-pages": "^4.0.0",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.7"

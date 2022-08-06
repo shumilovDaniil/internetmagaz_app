@@ -1,0 +1,12 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
+      "price": 44,
+      "discount": 50,
+      "rating": 4,
+      "img": "https://ogorod-foodmarket.ru/image/cache/catalog/molochnye-produkty/moloko/6/428083220-moloko-prostokvashino-2-5-930-ml-650x650.png"
+    }
+  ]
+}

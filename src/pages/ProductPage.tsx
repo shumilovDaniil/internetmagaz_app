@@ -5,7 +5,7 @@ import { GrLike } from "react-icons/gr";
 const ProductPage = () => {
   return (
     <div className="text-black text-xl ">
-      <Link className="text-white inline-block mb-4" to={"/"}>К товарам</Link>
+      <Link className="text-white inline-block mb-4" to={`/`}>К товарам</Link>
       <div className="flex gap-14 mb-5">
         <div className="slider max-w-2xl">
           <div className="flex flex-col gap-10">
@@ -46,7 +46,7 @@ const ProductPage = () => {
       </div>
 
       <nav className="nav bg-white p-4">
-        <ul className="flex gap-3 text-sm ">
+        <ul className="flex gap-3 text-lg ">
           <li>
             <button>О товаре</button>
           </li>

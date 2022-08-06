@@ -9,7 +9,7 @@ const ProductItem = () => {
   return (
     <>
       <div className="relative p-4 max-w-[30%] bg-white flex flex-col gap-2">
-        <Link to={"/page"}
+        <Link to="/page"
               className="absolute cursor-pointer z-20 top-2  right-2 p-4 onSinglePage"><AiOutlineRight /></Link>
         <div className="relative">
           <img className="w-40 h-40 m-auto"
@@ -24,15 +24,17 @@ const ProductItem = () => {
         </div>
         <p>Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...</p>
         <div className="rating">rating: 4/5</div>
-        <button
-          className="text-green-600 hover:bg-green-600 hover:text-white transition-colors border-2 border-green-600 w-full p-2 font-medium">В
-          корзину
-        </button>
-        <button
-          onClick={() => setTogglePopup(true)}
-          className="text-green-600 hover:bg-green-600 hover:text-white transition-colors border-2 border-green-600 w-full p-2 font-medium">
-          Быстрый просмотр
-        </button>
+        <div className="flex gap-2 text-sm">
+          <button
+            className="text-green-600 hover:bg-green-600 hover:text-white transition-colors border-2 border-green-600 w-full p-1 font-medium">В
+            корзину
+          </button>
+          <button
+            onClick={() => setTogglePopup(true)}
+            className="text-green-600 hover:bg-green-600 hover:text-white transition-colors border-2 border-green-600 w-full p-1 font-medium">
+            Быстрый просмотр
+          </button>
+        </div>
       </div>
 
       {togglePopup ? <Popup setTogglePopup={setTogglePopup} /> : ""}

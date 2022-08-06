@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { Link } from "react-router-dom";
 import { IoMdClose } from "react-icons/io";
 import { FcLike } from "react-icons/fc";
+import { prefix } from "../utils/prefix";
 
 interface PopupProps {
   setTogglePopup: (arg: boolean) => void;
@@ -48,7 +49,7 @@ const Popup: FC<PopupProps> = ({ setTogglePopup }) => {
               <span>21 день на возврат</span>
             </div>
             <Link
-              to="/product"
+              to={`${prefix}/page`}
               className="inline-block p-2 text-white bg-green-600"
             >Больше информации о товаре</Link>
           </div>
