@@ -19,7 +19,6 @@ function App() {
             <Route path={`/cart`} element={<Cart />} />
             <Route path={`/create-ad`} element={<CreateAd />} />
             <Route path={`/page`} element={<ProductPage />} />
-
           </Routes>
         </div>
       </div>

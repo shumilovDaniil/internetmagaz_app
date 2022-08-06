@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { AiOutlineRight } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import Popup from "./Popup";
+import { IProduct } from "../types";
 
-const ProductItem = () => {
+
+const ProductItem = (item: IProduct) => {
   const [togglePopup, setTogglePopup] = useState(false);
 
   return (
@@ -20,7 +22,7 @@ const ProductItem = () => {
           </div>
         </div>
         <div className="price">
-          <strong className="font-medium text-3xl">44,50 ₽</strong>
+          <strong className="font-medium text-3xl">{item.price} ₽</strong>
         </div>
         <p>Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...</p>
         <div className="rating">rating: 4/5</div>
